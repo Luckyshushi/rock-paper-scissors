@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Rock, paper and scissors</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<section class="container-fluid game">
+     <div class="row score pt-3">
+         <div class="col-md-4 offset-2 player-score">
+             <h2 class="text-center">Player</h2>
+             <p class="text-center">0</p>
+         </div>
+         <div class="col-md-4 computer-score">
+             <h2 class="text-center">Computer</h2>
+             <p class="text-center">0</p>
+         </div>
+     </div>
+    <div class="row text-center intro">
+        <div class="col-md-12">
+            <h1 class="text-center text-white my-5">Rock Paper and Scissors</h1>
+        </div>
+        <button class="btn mx-auto mt-5">Let's play</button>
+    </div>
+    <div class="match fadeOut mt-5">
+        <h2 class="winner">Choose an option</h2>
+        <div class="hands">
+            <img class="player-hand" src="images/rock.png" alt="">
+            <img class="computer-hand" src="images/rock.png" alt="">
+
+        </div>
+        <div class="option">
+            <button class="rock btn">rock</button>
+            <button class="paper btn">paper</button>
+            <button class="scissors btn">scissors</button>
+        </div>
+    </div>
+    <div class="end fadeOut">
+        <h1 class="text-white text-center fs-100"></h1>
+        <div class="row flex-row justify-content-center mt-5">
+            <button class="btn play-again mr-3">Play again</button>
+            <button class="btn quit ml-3">Quit</button>
+        </div>
+    </div>
+    <div class="quit-section fadeOut">
+        <h1 class="text-white text-center fs-100">Game Over</h1>
+    </div>
+
+</section>
+
+
+<script src="js/jquery-3.3.1.slim.min.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
